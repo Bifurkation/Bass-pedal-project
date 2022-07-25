@@ -52,7 +52,7 @@ while true; do
     	fi
     fi
 
-    #check if fluidsynth och ttymidi are connected, ny checking if the word "Connected" is in the output of "aconnect -l"
+    #check if fluidsynth och ttymidi are connected, by checking if the word "Connected" is in the output of "aconnect -l"
     aconn=$(aconnect -l | grep "Connected")
     
     #if "Connected is not present"
